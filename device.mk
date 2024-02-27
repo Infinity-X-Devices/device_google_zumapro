@@ -701,5 +701,9 @@ TARGET_SYSTEM_EXT_PROP += device/google/zumapro/system_ext.prop
 PRODUCT_PACKAGES += \
     TetheringOverlay
 
+# PixelDisplayService
+PRODUCT_PACKAGES += \
+    com.android.pixeldisplayservice.auto_generated_rro_product_adevtool__
+
 # Touch
 include hardware/google/pixel/touch/device.mk
