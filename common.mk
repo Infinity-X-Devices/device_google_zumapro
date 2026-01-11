@@ -433,6 +433,7 @@ PRODUCT_PACKAGES += \
 
 # Properties
 TARGET_PRODUCT_PROP += device/google/zumapro/product.prop
+TARGET_SYSTEM_PROP += device/google/zumapro/system.prop
 TARGET_SYSTEM_EXT_PROP += device/google/zumapro/system_ext.prop
 TARGET_VENDOR_PROP += device/google/zumapro/vendor.prop
 
