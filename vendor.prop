@@ -217,3 +217,14 @@ vendor.zram.size?=50p
 
 # Zygote
 zygote.critical_window.minute=10
+
+# Silence high-frequency vendor logcat spam (HWC brightness/TE votes, sensor hub lux
+# calculation, RIL hex dumps of every SIT message, thermal sensor reads, oem RIL client
+# chatter). liblog honours these for native loggers too; the RIL keeps its full trace in
+# /data/vendor/radio/sit-ril regardless.
+persist.log.tag.hwc-display=W
+persist.log.tag.AOC=I
+persist.log.tag.RIL=I
+persist.log.tag.RIL_EXTERNAL=W
+persist.log.tag.SIT-OEM=W
+persist.log.tag.pixel-thermal=W
